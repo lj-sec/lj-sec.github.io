@@ -1,0 +1,85 @@
+.parallax
+{
+    background-image: url("profile.jpg");
+    height: 75%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px)
+{
+    .parallax
+    {
+        background-attachment: scroll;
+    }
+}
+
+.navbar
+{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: inherit;
+    width: 100%;
+}
+
+body, html
+{
+    height: 100%;
+    background-color: #2c2c2c;
+    color: #f1f1f1;
+}
+
+h1, h2, h4, .lead, p
+{
+    color: #e0e0e0;
+}
+
+.card
+{
+    background-color: #3b3b3b;
+    color: #e0e0e0;
+    border: none;
+}
+
+.card a
+{
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
+.container
+{
+    max-width: 1000px;
+}
+
+.btn-primary
+{
+    background-color: #1e90ff;
+    border-color: #1e90ff;
+}
+.btn-primary:hover
+{
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.btn-outline-secondary
+{
+    color: #f1f1f1;
+    border-color: #f1f1f1;
+}
+
+.btn-outline-secondary:hover
+{
+    color: #2c2c2c;
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+}
+
+footer
+{
+    color: #bfbfbf;
+}
