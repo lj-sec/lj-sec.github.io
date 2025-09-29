@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logan Jackson | Resume</title>
+    <meta name="description" content="Logan Jackson — Digital Forensics & Cybersecurity. Projects, certifications, and resume.">
+    <link rel="canonical" href="https://lj-sec.github.io/">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
@@ -12,118 +14,158 @@
 </head>
 <body>
     <nav class="navbar">
+        <!-- <div class="container"> -->
         <div class="ms-auto">
             <a href="https://github.com/lj-sec" class="btn btn-outline-secondary mx-1">GitHub</a>
             <a href="https://linkedin.com/in/logan-jackson-b8806924b/" class="btn btn-outline-secondary mx-1">LinkedIn</a>
             <a href="https://instagram.com/_lcjackson_/" class="btn btn-outline-secondary mx-1">Instagram</a>
         </div>
+        <!-- </div> -->
     </nav>
     <div class="parallax"></div>
-    <div class="container text-center mt-5">
-        <header class="mb-5">
-            <h1>Logan Jackson</h1>
-            <p class="lead">Digital Forensics & Cybersecurity Major<br>Eastern Kentucky University</p>
-        </header>
+    <div class="main-bg">
+        <br><br>
+        <div class="container text-center">
+            <header class="mb-5">
+                <h1>Logan Jackson</h1>
+                <p class="lead">Digital Forensics & Cybersecurity Major<br>Eastern Kentucky University</p>
+            </header>
 
-        <section id="about" class="mb-5">
-            <h2>About Me</h2>
-            <p>Hi! I am Logan Jackson, a rising senior at EKU. I am a member of EKU Collegiate Cyber Defense Competiton (CCDC) Team, and the current Vice President of EKU Club Archery. I independently studied in high school, becoming GFACT certified. Being familiar with the fundamentals of cybersecurity concepts, I look forward to internships in this area and, eventually, a career. Download my resume <a href="documents/resume.pdf">here</a>!</p>
-        </section>
+            <section id="about" class="mb-5">
+                <h2>About Me</h2>
+                <p>Hi! I am Logan Jackson, senior at EKU. I am a member of EKU Collegiate Cyber Defense Competiton (CCDC) Team, and the current Vice President of EKU Club Archery. I independently studied in high school, becoming GFACT certified. Being familiar with the fundamentals of cybersecurity concepts, I look forward to internships in this area and, eventually, a career. Download my resume <a href="documents/resume.pdf">here</a>!</p>
+            </section>
 
-        <section id="projects" class="mb-5">
-            <h2>Projects</h2>
-            <div class="container">
+            <section id="projects" class="mb-5">
+                <h2>Projects</h2>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="card mb-3">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">My NixOS Flake</h4>
+                                    <img src="https://raw.githubusercontent.com/lj-sec/nixos-config/refs/heads/main/.github/screenshots/screenshot1.png" class="d-inline-block mb-2 card-img-top" alt="Desktop Screenshot" loading="lazy" decoding="async" />
+                                    <a href="https://nixos.org">
+                                        <img src="https://img.shields.io/badge/NIXOS-5277C3.svg?style=for-the-badge&logo=NixOS&logoColor=white" class="d-inline-block mb-2" alt="NixOS logo badge" loading="lazy" decoding="async" />
+                                    </a>
+                                    <p class="card-text">
+                                        A NixOS flake for reproducible development environments, making it easy to spin up consistent setups for various projects.
+                                    </p>
+                                    <a href="https://github.com/lj-sec/nixos-config" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="card mb-3">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">Scylla</h4>
+                                    <a href="https://microsoft.com/powershell">
+                                        <img src="https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white" class="d-inline-block mb-2" alt="PowerShell logo badge" loading="lazy" decoding="async" />
+                                    </a>
+                                    <p class="card-text">
+                                        A collection of PowerShell scripts initially created for 
+                                        <a href="https://www.nationalccdc.org" target="_blank">CCDC</a> 
+                                        use at EKU, tackling a wide variety of Windows administrative tasks.
+                                    </p>
+                                    <a href="https://github.com/lj-sec/Scylla" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="card mb-3">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">Install-Git</h4>
+                                    <a href="https://microsoft.com/powershell">
+                                        <img src="https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white" class="d-inline-block mb-2" alt="PowerShell logo badge" loading="lazy" decoding="async" />
+                                    </a>
+                                    <p class="card-text">
+                                        A PowerShell script to pull and install the latest 64-bit Git for Windows with installer-selected defaults and minimal user interaction.
+                                    </p>
+                                    <a href="https://github.com/lj-sec/Install-Git" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="card mb-3">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">PAxml_api</h4>
+                                    <a href="https://microsoft.com/powershell">
+                                        <img src="https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white" class="d-inline-block mb-2" alt="PowerShell logo badge" loading="lazy" decoding="async" />
+                                    </a>
+                                    <p class="card-text">
+                                        A multiprocessing shell script originally created by 
+                                        <a href="https://github.com/ravesec" target="_blank" aria-label="Visit Raven GitHub profile">Raven</a> 
+                                        and built upon by me to set up Palo Alto Firewalls for 
+                                        <a href="https://www.nationalccdc.org" target="_blank">CCDC</a> 
+                                        competitions using its XML API.
+                                    </p>
+                                    <a href="https://github.com/lj-sec/PAxml_api" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="card mb-3">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">Convert-CSVtoDL</h4>
+                                    <a href="https://microsoft.com/powershell">
+                                        <img src="https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white" class="d-inline-block mb-2" alt="PowerShell logo badge" loading="lazy" decoding="async" />
+                                    </a>
+                                    <p class="card-text">
+                                        A PowerShell script featuring a GUI to add emails into Microsoft Exchange Online distribution groups.
+                                    </p>
+                                    <a href="https://github.com/lj-sec/Convert-CSVtoDL" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="card mb-3">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">This website!</h4>
+                                    <a href="https://getbootstrap.com/">
+                                        <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" class="d-inline-block mb-2" alt="Bootstrap logo badge" loading="lazy" decoding="async" />
+                                    </a>
+                                    <a href="https://html.spec.whatwg.org/multipage/">
+                                        <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" class="d-inline-block mb-2" alt="HTML5 logo badge" loading="lazy" decoding="async" />
+                                    </a>
+                                    <p class="card-text">
+                                        A simple HTML website with Bootstrap CSS displaying my current projects and resume.
+                                    </p>
+                                    <a href="https://github.com/lj-sec/lj-sec.github.io" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id = "certifications">
+                <h2>Certifications</h2><br>
                 <div class="row justify-content-center">
-                    <div class="col-md-4 d-flex justify-content-center">
+                    <div class="col-md-6 d-flex justify-content-center">
                         <div class="card mb-3">
                             <div class="card-body d-flex flex-column">
-                                <h4 class="card-title">Scylla</h4>
-                                <p class="card-text">
-                                    A collection of PowerShell scripts initially created for 
-                                    <a href="https://www.nationalccdc.org" target="_blank">CCDC</a> 
-                                    use at EKU, tackling a wide variety of Windows administrative tasks.
-                                </p>
-                                <a href="https://github.com/lj-sec/Scylla" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <div class="card mb-3">
-                            <div class="card-body d-flex flex-column">
-                                <h4 class="card-title">PAxml_api</h4>
-                                <p class="card-text">
-                                    A multiprocessing shell script originally created by 
-                                    <a href="https://github.com/ravesec" target="_blank" aria-label="Visit Raven GitHub profile">Raven</a> 
-                                    and built upon by me to set up Palo Alto Firewalls for 
-                                    <a href="https://www.nationalccdc.org" target="_blank">CCDC</a> 
-                                    competitions using its XML API.
-                                </p>
-                                <a href="https://github.com/lj-sec/PAxml_api" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <div class="card mb-3">
-                            <div class="card-body d-flex flex-column">
-                                <h4 class="card-title">Install-Git</h4>
-                                <p class="card-text">
-                                    A PowerShell script to pull and install the latest 64-bit Git for Windows with installer-selected defaults and minimal user interaction.
-                                </p>
-                                <a href="https://github.com/lj-sec/Install-Git" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <div class="card mb-3">
-                            <div class="card-body d-flex flex-column">
-                                <h4 class="card-title">Convert-CSVtoDL</h4>
-                                <p class="card-text">
-                                    A PowerShell script featuring a GUI to add emails into Microsoft Exchange Online distribution groups.
-                                </p>
-                                <a href="https://github.com/lj-sec/Convert-CSVtoDL" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <div class="card mb-3">
-                            <div class="card-body d-flex flex-column">
-                                <h4 class="card-title">This website!</h4>
-                                <p class="card-text">
-                                    A simple HTML website with Bootstrap CSS displaying my current projects and resume.
-                                </p>
-                                <a href="https://github.com/lj-sec/lj-sec.github.io" class="btn btn-primary mt-auto" target="_blank">GitHub Repo</a>
+                                <h4>GIAC Foundational Cybersecurity Technologies (GFACT)</h4>
+                                <p class="card-text">This certification covers topics such as: Networking, Hardware and Virutalization, Security Concepts, Windows and Linux Foundations, and Forensics and Post-Exploitation</p>
+                                <a href="https://www.credly.com/badges/f0bf9c06-77f6-4dc3-aa18-0f8c84c3fac0" class="btn btn-primary mt-auto" target="_blank">Show Certification</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id = "certifications">
-            <h2>Certifications</h2><br>
-            <div class="row justify-content-center">
-                <div class="col-md-6 d-flex justify-content-center">
-                    <div class="card mb-3">
-                        <div class="card-body d-flex flex-column">
-                            <h4>GIAC Foundational Cybersecurity Technologies (GFACT)</h4>
-                            <p class="card-text">This certification covers topics such as: Networking, Hardware and Virutalization, Security Concepts, Windows and Linux Foundations, and Forensics and Post-Exploitation</p>
-                            <a href="https://www.credly.com/badges/f0bf9c06-77f6-4dc3-aa18-0f8c84c3fac0" class="btn btn-primary mt-auto" target="_blank">Show Credential</a>
-                        </div>
-                    </div>
+            <footer class="mt-5">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:loganjack627@gmail.com">loganjack627@gmail.com</a></p>
+                <div class="d-flex justify-content-center">
+                    <a href="https://github.com/lj-sec" class="btn btn-outline-secondary mx-2">GitHub</a>
+                    <a href="https://linkedin.com/in/logan-jackson-b8806924b/" class="btn btn-outline-secondary mx-2">LinkedIn</a>
+                    <a href="https://instagram.com/_lcjackson_/" class="btn btn-outline-secondary mx-2">Instagram</a>
                 </div>
-            </div>
-        </section>
-
-        <footer class="mt-5">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:loganjack627@gmail.com">loganjack627@gmail.com</a></p>
-            <div class="d-flex justify-content-center">
-                <a href="https://github.com/lj-sec" class="btn btn-outline-secondary mx-2">GitHub</a>
-                <a href="https://linkedin.com/in/logan-jackson-b8806924b/" class="btn btn-outline-secondary mx-2">LinkedIn</a>
-                <a href="https://instagram.com/_lcjackson_/" class="btn btn-outline-secondary mx-2">Instagram</a>
-            </div>
-            <br>
-        </footer>
+                <br>
+                <p>Background photo by <a href="https://unsplash.com/@ronwhitaker?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ron Whitaker</a> on <a href="https://unsplash.com/photos/a-black-and-white-photo-of-a-bunch-of-wavy-shapes-mVuKCYMGZBM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+                <br>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
