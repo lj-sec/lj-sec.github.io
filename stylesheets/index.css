@@ -135,6 +135,31 @@ a:focus {
     text-decoration: underline;
 }
 
+a[href^="http://"]:not(:has(> img))::after,
+a[href^="https://"]:not(:has(> img))::after {
+    content: "\2197\FE0E";
+    color: var(--ctp-lavender);
+    display: inline-block;
+    font-family: "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols", "Arial Unicode MS", sans-serif;
+    font-size: 0.72em;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 0.24em;
+    opacity: 0.72;
+    text-decoration: none;
+    transform: translateY(-0.08em);
+}
+
+a[href^="http://"]:has(> img),
+a[href^="https://"]:has(> img) {
+    text-decoration: none;
+}
+
+.btn[href^="http://"]::after,
+.btn[href^="https://"]::after {
+    color: currentColor;
+}
+
 .card {
     background-color: var(--ctp-surface0);
     color: var(--ctp-text);
@@ -154,13 +179,168 @@ a:focus {
     color: var(--ctp-subtext1);
 }
 
+.certification-card {
+    max-width: 30rem;
+    width: 100%;
+}
+
+.certification-badge {
+    align-self: center;
+    height: 8.5rem;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    width: 8.5rem;
+}
+
 .container {
     max-width: 1000px;
 }
 
 .btn {
     border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.45rem;
+    padding: 0.45rem 1rem;
     text-decoration: none;
+}
+
+.card-actions {
+    display: grid;
+    gap: 0.55rem;
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: auto;
+    padding-top: 0.65rem;
+    width: 100%;
+}
+
+.card-actions--split {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card-actions--triple {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-actions .btn {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .card-actions--split,
+    .card-actions--triple {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.certificate-modal-open {
+    overflow: hidden;
+}
+
+.certificate-modal[hidden] {
+    display: none;
+}
+
+.certificate-modal {
+    align-items: center;
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    padding: 1.25rem;
+    position: fixed;
+    z-index: 1000;
+}
+
+.certificate-modal__backdrop {
+    background: rgba(17, 17, 27, 0.82);
+    border: 0;
+    cursor: pointer;
+    inset: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.certificate-modal__card {
+    background-color: var(--ctp-base);
+    border: 1px solid var(--ctp-surface2);
+    border-radius: 0.85rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    max-height: min(92vh, 58rem);
+    max-width: 64rem;
+    overflow: hidden;
+    position: relative;
+    width: min(100%, 64rem);
+}
+
+.certificate-modal__card:focus {
+    outline: 2px solid var(--ctp-mauve);
+    outline-offset: 0.2rem;
+}
+
+.certificate-modal__header {
+    align-items: center;
+    background-color: var(--ctp-surface0);
+    border-bottom: 1px solid var(--ctp-surface1);
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0.9rem 1rem;
+}
+
+.certificate-modal__header h3 {
+    color: var(--ctp-lavender);
+    font-size: 1.05rem;
+    margin: 0;
+    text-align: left;
+}
+
+.certificate-modal__actions {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 0.55rem;
+}
+
+.certificate-modal__preview-wrap {
+    background-color: white;
+    max-height: min(72vh, 48rem);
+    overflow: auto;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+.certificate-modal__preview {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+@media (max-width: 640px) {
+    .certificate-modal {
+        padding: 0.65rem;
+    }
+
+    .certificate-modal__header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .certificate-modal__actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .certificate-modal__actions .btn {
+        width: 100%;
+    }
+
+    .certificate-modal__preview-wrap {
+        max-height: 68vh;
+        padding: 0.4rem;
+    }
 }
 
 .btn-primary {
